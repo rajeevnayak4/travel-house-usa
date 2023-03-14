@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<title>
+		Login | Register -Hotel Management System
+	</title>
+</head>
+
+<body>
+
+	<style>
+		/* login-register */
+		:root {
+			--primary-color: #4267B2;
+			/* --secondary-color: #4267B2; */
+			--black: #000000;
+			--white: #ffffff;
+			--gray: #efefef;
+			--gray-2: #757575;
+
+			--google-color: #DB4437;
+		}
+
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+		* {
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.login-register .container {
+			position: relative;
+			min-height: 100vh;
+			overflow: hidden;
+		}
+
+		.login-register .row {
+			display: flex;
+			flex-wrap: wrap;
+			height: 100vh;
+		}
+
+		.login-register .col {
+			width: 50%;
+		}
+
+		.login-register .align-items-center {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.login-register .form-wrapper {
+			width: 100%;
+			max-width: 28rem;
+		}
+
+		.login-register .form {
+			padding: 1rem;
+			background-color: var(--white);
+			border-radius: 1.5rem;
+			width: 100%;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			transform: scale(0);
+			transition: .5s ease-in-out;
+			transition-delay: 1s;
+		}
+
+		.login-register .input-group {
+			position: relative;
+			width: 100%;
+			margin: 1rem 0;
+		}
+
+		.login-register .input-group i {
+			position: absolute;
+			top: 50%;
+			left: 1rem;
+			transform: translateY(-50%);
+			font-size: 1.4rem;
+			color: var(--gray-2);
+		}
+
+		.login-register .input-group input {
+			width: 100%;
+			padding: 1rem 3rem;
+			font-size: 1rem;
+			background-color: var(--gray);
+			border-radius: .5rem;
+			border: 0.125rem solid var(--white);
+			outline: none;
+		}
+
+		.login-register .input-group input:focus {
+			border: 0.125rem solid var(--primary-color);
+		}
+
+		.login-register .form button {
+			cursor: pointer;
+			width: 100%;
+			padding: .6rem 0;
+			border-radius: .5rem;
+			border: none;
+			background-color: var(--primary-color);
+			color: var(--white);
+			font-size: 1.2rem;
+			outline: none;
+		}
+
+		.login-register .back {
+			margin-top: 0.5rem;
+		}
+
+		.login-register .form p {
+			margin: 1rem 0;
+			font-size: .7rem;
+		}
+
+		.login-register .flex-col {
+			flex-direction: column;
+		}
+
+		.login-register .social-list {
+			margin: 2rem 0;
+			padding: 1rem;
+			border-radius: 1.5rem;
+			width: 100%;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			transform: scale(0);
+			transition: .5s ease-in-out;
+			transition-delay: 1.2s;
+		}
+
+		.login-register .social-list>div {
+			color: var(--white);
+			margin: 0 .5rem;
+			padding: .7rem;
+			cursor: pointer;
+			border-radius: .5rem;
+			cursor: pointer;
+			transform: scale(0);
+			transition: .5s ease-in-out;
+		}
+
+		.login-register .social-list>div:nth-child(1) {
+			transition-delay: 1.4s;
+		}
+
+		.login-register .social-list>div:nth-child(2) {
+			transition-delay: 1.6s;
+		}
+
+		.login-register .social-list>div:nth-child(3) {
+			transition-delay: 1.8s;
+		}
+
+		.login-register .social-list>div:nth-child(4) {
+			transition-delay: 2s;
+		}
+
+		.login-register .social-list>div>i {
+			font-size: 1.5rem;
+			transition: .4s ease-in-out;
+		}
+
+		.login-register .social-list>div:hover i {
+			transform: scale(1.5);
+		}
+
+		.login-register .google-bg {
+			background-color: var(--google-color);
+		}
+
+		.login-register .pointer {
+			cursor: pointer;
+		}
+
+		.login-register .container.sign-in .form.sign-in,
+		.login-register .container.sign-in .social-list.sign-in,
+		.login-register .container.sign-in .social-list.sign-in>div,
+		.login-register .container.sign-up .form.sign-up,
+		.login-register .container.sign-up .social-list.sign-up,
+		.login-register .container.sign-up .social-list.sign-up>div {
+			transform: scale(1);
+		}
+
+		.login-register .content-row {
+			position: absolute;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			z-index: 6;
+			width: 100%;
+		}
+
+		.login-register .text {
+			margin: 4rem;
+			color: var(--white);
+		}
+
+		.login-register .text h2 {
+			font-size: 3.5rem;
+			font-weight: 800;
+			margin: 2rem 0;
+			transition: 1s ease-in-out;
+		}
+
+		.login-register .text p {
+			font-weight: 600;
+			transition: 1s ease-in-out;
+			transition-delay: .2s;
+		}
+
+		.login-register .img img {
+			width: 30vw;
+			transition: 1s ease-in-out;
+			transition-delay: .4s;
+		}
+
+		.login-register .text.sign-in h2,
+		.login-register .text.sign-in p,
+		.login-register .img.sign-in img {
+			transform: translateX(-250%);
+		}
+
+		.login-register .text.sign-up h2,
+		.login-register .text.sign-up p,
+		.login-register .img.sign-up img {
+			transform: translateX(250%);
+		}
+
+		.login-register .container.sign-in .text.sign-in h2,
+		.login-register .container.sign-in .text.sign-in p,
+		.login-register .container.sign-in .img.sign-in img,
+		.login-register .container.sign-up .text.sign-up h2,
+		.login-register .container.sign-up .text.sign-up p,
+		.login-register .container.sign-up .img.sign-up img {
+			transform: translateX(0);
+		}
+
+		/* BACKGROUND */
+		.login-register .container::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			width: 300vw;
+			transform: translate(35%, 0);
+			background-image: linear-gradient(-45deg, var(--primary-color) 0%, var(--primary-color) 100%);
+			transition: 1s ease-in-out;
+			z-index: 6;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			border-bottom-right-radius: max(50vw, 50vh);
+			border-top-left-radius: max(50vw, 50vh);
+		}
+
+		.login-register .container.sign-in::before {
+			transform: translate(0, 0);
+			right: 50%;
+		}
+
+		.login-register .container.sign-up::before {
+			transform: translate(100%, 0);
+			right: 50%;
+		}
+
+		/* RESPONSIVE */
+		@media only screen and (max-width: 425px) {
+
+			.login-register .container::before,
+			.login-register .container.sign-in::before,
+			.login-register .container.sign-up::before {
+				height: 100vh;
+				border-bottom-right-radius: 0;
+				border-top-left-radius: 0;
+				z-index: 0;
+				transform: none;
+				right: 0;
+			}
+
+			.login-register .container.sign-in .col.sign-in,
+			.login-register .container.sign-up .col.sign-up {
+				transform: translateY(0);
+			}
+
+			.login-register .content-row {
+				align-items: flex-start !important;
+			}
+
+			.login-register .content-row .col {
+				transform: translateY(0);
+				background-color: unset;
+			}
+
+			.login-register .col {
+				width: 100%;
+				position: absolute;
+				padding: 0.7rem;
+				background-color: var(--white);
+				border-top-left-radius: 2rem;
+				border-top-right-radius: 2rem;
+				transform: translateY(100%);
+				transition: 1s ease-in-out;
+			}
+
+			.login-register .row {
+				align-items: flex-end;
+				justify-content: flex-end;
+			}
+
+			.login-register .form,
+			.login-register .social-list {
+				box-shadow: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.login-register .text {
+				margin: 0;
+			}
+
+			.login-register .text p {
+				display: none;
+			}
+
+			.login-register .text h2 {
+				margin: .5rem;
+				font-size: 2rem;
+			}
+		}
+	</style>
+	<section id="login-register" class="login-register">
+		<div id="container" class="container">
+			<!-- FORM SECTION -->
+			<div class="row">
+				<!-- SIGN UP -->
+				<div class="col align-items-center flex-col sign-up">
+					<div class="form-wrapper align-items-center">
+						<div class="form sign-up">
+							<div class="input-group">
+								<i class='bx bxs-user'></i>
+								<input type="text" placeholder="Enter Username" required>
+							</div>
+							<div class="input-group">
+								<i class='bx bx-mail-send'></i>
+								<input type="email" placeholder="Enter Email" required>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="password" placeholder="Enter Password" required>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="password" placeholder="Confirm password" required>
+							</div>
+							<button>
+								Sign up
+							</button>
+							<button class="back" onclick="window.location.href='index.html';">
+								Back to Home
+							</button>
+							<p>
+								<span>
+									Already have an account?
+								</span>
+								<b onclick="toggle()" class="pointer">
+									Sign in here
+								</b>
+							</p>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<div class="social-list align-items-center sign-up">
+							<div class="align-items-center google-bg" title="Login With Gmail">
+								<i class='bx bxl-google'></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END SIGN UP -->
+				<!-- SIGN IN -->
+				<div class="col align-items-center flex-col sign-in">
+					<div class="form-wrapper align-items-center">
+						<div class="form sign-in">
+							<div class="input-group">
+								<i class='bx bxs-user'></i>
+								<input type="text" placeholder="Enter Username" required>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="password" placeholder="Enter Password" required>
+							</div>
+							<button>
+								Sign in
+							</button>
+							<button class="back" onclick="window.location.href='index.html';">
+								Back to Home
+							</button>
+							<p>
+								<b><a href="" style="text-decoration: none; color: var(--black);">
+										Forgot password?
+									</a>
+								</b>
+							</p>
+							<p>
+								<span>
+									Don't have an account?
+								</span>
+								<b onclick="toggle()" class="pointer">
+									Sign up here
+								</b>
+							</p>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<div class="social-list align-items-center sign-in">
+
+							<div class="align-items-center google-bg" title="Login With Gmail">
+								<i class='bx bxl-google'></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- END SIGN IN -->
+			</div>
+			<!-- END FORM SECTION -->
+			<!-- CONTENT SECTION -->
+			<div class="row content-row">
+				<!-- SIGN IN CONTENT -->
+				<div class="col align-items-center flex-col">
+					<div class="text sign-in">
+						<h2>
+							Login, Welcome Back!
+						</h2>
+
+					</div>
+					<div class="img sign-in">
+						<img src="assets/login.svg" alt="welcome">
+					</div>
+				</div>
+				<!-- END SIGN IN CONTENT -->
+				<!-- SIGN UP CONTENT -->
+				<div class="col align-items-center flex-col">
+					<div class="img sign-up">
+						<img src="assets/register.svg" alt="welcome">
+					</div>
+					<div class="text sign-up">
+						<h2>
+							Register!
+						</h2>
+
+					</div>
+				</div>
+				<!-- END SIGN UP CONTENT -->
+			</div>
+			<!-- END CONTENT SECTION -->
+		</div>
+	</section>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

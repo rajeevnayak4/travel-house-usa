@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Rooms | Hotel Management System</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="">
+                    <!-- Classy Menu -->
+                    <nav class="shadow classy-navbar justify-content-between fixed-top bg-white" id="nav">
+
+                        <a class="nav-brand p-5" href="index.html"><b><i class="fas fa-umbrella-beach"></i> HMS</b></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+                                    <li><a href="./about.html"><i class="fas fa-hotel"></i> About Us</a></li>
+                                    <li><a href="./room.html"><i class="fas fa-bed"></i> Rooms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./single-room.html"><i class="fas fa-bed"></i> Single Room</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="./contact.html"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                                </ul>
+
+                                <div class="book-now-btn ml-3 ml-lg-5">
+                                    <a href="login-register.html">Login <i class="fas fa-sign-in-alt"></i></a>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/17.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">Our Room</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Room</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Area End -->
+
+    <div class="hotel-search-form-area mt-3">
+        <div class="shadow-lg">
+            <!-- <div class="container-fluid"> -->
+            <div class="hotel-search-form">
+                <form action="#" method="post">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-6 col-md-2 col-lg-3">
+                            <label for="checkIn">Check In</label>
+                            <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                        </div>
+
+                        <div class="col-6 col-md-2 col-lg-3">
+                            <label for="checkOut">Check Out</label>
+                            <input type="date" class="form-control" id="checkOut" name="checkout-date">
+                        </div>
+                        <div class="col-4 col-md-1">
+                            <label for="room">Room</label>
+                            <select name="room" id="room" class="form-control">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-1">
+                            <label for="adults">Adult</label>
+                            <select name="adults" id="adults" class="form-control">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+        
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-2 col-lg-1">
+                            <label for="children">Children</label>
+                            <select name="children" id="children" class="form-control">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+ 
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="submit" class="form-control btn design-btn w-100">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rooms Area Start -->
+    <div class="rooms-area section-padding-100-0 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <!-- Single Room Area -->
+                    <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img/bg-img/16.jpg" alt="">
+                        </div>
+                        <!-- Room Content -->
+                        <div class="room-content">
+                            <h2>Room View Sea</h2>
+                            <h4>400$ <span>/ Day</span></h4>
+                            <div class="room-feature">
+                                <h6>Size: <span>30 ft</span></h6>
+                                <h6>Capacity: <span>Max persion 5</span></h6>
+                                <h6>Bed: <span>King beds</span></h6>
+                                <h6>Services: <span>Wifi, television ...</span></h6>
+                            </div>
+                            <a href="#" class="btn view-detail-btn">View Details <i class="fa fa-long-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Single Room Area -->
+                    <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img/bg-img/17.jpg" alt="">
+                        </div>
+                        <!-- Room Content -->
+                        <div class="room-content">
+                            <h2>Small Room</h2>
+                            <h4>400$ <span>/ Day</span></h4>
+                            <div class="room-feature">
+                                <h6>Size: <span>30 ft</span></h6>
+                                <h6>Capacity: <span>Max persion 5</span></h6>
+                                <h6>Bed: <span>King beds</span></h6>
+                                <h6>Services: <span>Wifi, television ...</span></h6>
+                            </div>
+                            <a href="#" class="btn view-detail-btn">View Details <i class="fa fa-long-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Single Room Area -->
+                    <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img/bg-img/18.jpg" alt="">
+                        </div>
+                        <!-- Room Content -->
+                        <div class="room-content">
+                            <h2>Premium King Room</h2>
+                            <h4>400$ <span>/ Day</span></h4>
+                            <div class="room-feature">
+                                <h6>Size: <span>30 ft</span></h6>
+                                <h6>Capacity: <span>Max persion 5</span></h6>
+                                <h6>Bed: <span>King beds</span></h6>
+                                <h6>Services: <span>Wifi, television ...</span></h6>
+                            </div>
+                            <a href="#" class="btn view-detail-btn">View Details <i class="fa fa-long-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="pagination wow fadeInUp mb-100" data-wow-delay="1000ms">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next <i
+                                        class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <!-- Hotel Reservation Area -->
+                    <div class="hotel-reservation--area mb-100">
+                        <form action="#" method="post">
+
+                            <div class="form-group mb-50">
+                                <div class="slider-range">
+                                    <div class="range-price">Max Price: $0 - $3000</div>
+                                    <div data-min="0" data-max="3000" data-unit="$"
+                                        class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                        data-value-min="0" data-value-max="3000" data-label-result="Max Price: ">
+                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all"
+                                            tabindex="0"></span>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all"
+                                            tabindex="0"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn design-btn w-100">Check Available</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rooms Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row align-items-baseline justify-content-between">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <a class="nav-brand text-white" href="index.html"><b>Hotel Management System</b></a>
+                            <span class=" text-justify mt-3">The system assistance in handling, managing and organizing
+                                the data and information of the hotel, its customers, the services and other facilities
+                                that they deliver.
+                                It also helps in improving the efficiency in hotel management.
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Links</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+                                <li><a href="./about.html"><i class="fa fa-caret-right" aria-hidden="true"></i> About
+                                        Us</a>
+                                </li>
+                                <li><a href="./room.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Our
+                                        Room</a>
+                                </li>
+                                <li><a href="./contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        Contact</a></li>
+
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+
+                            <h5 class="widget-title">Subscribe Newsletter</h5>
+                            <span>Subscribe our newsletter gor get notification about new updates.</span>
+                            <form action="index.html" class="nl-form">
+                                <input type="email" class="form-control" placeholder="Enter your email...">
+                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                Hotel Management System</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- Font -->
+    <script src="js/all.min.js"></script>
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/custom.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
