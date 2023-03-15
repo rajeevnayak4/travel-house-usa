@@ -12,6 +12,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
     <script src="https://kit.fontawesome.com/8e2cac5140.js" crossorigin="anonymous"></script>
 
 </head>
@@ -24,24 +25,24 @@
     </div>
     <!-- /Preloader -->
 <div>
-        <nav class="navbar">
-            <div class="navbar-container">
-              <div class="navbar-left">
-                <spam>Need help? We're here 24/7. Call us: <i class="fa-solid fa-flag-usa"></i> (202) 552-1508 | (977-1) 597-0995 | (977-1) 597-0995</spam>
-              </div>
-              <div class="navbar-right">
-                <div class="navbar-item">
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-                <div class="navbar-item">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="navbar-item">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-              </div>
-            </div>
-          </nav>
+    <nav class="navbar">
+        <div class="topnavbar" href="#">
+            <span class="callus">Need help? We're here 24/7.
+                <span class="callus">Call us: <img src="assets/icon1.png" alt=""></i><a href="tel:(202) 552-1508"> (202) 552-1508></a> | <img src="assets/icon.png" alt=""><a href="tel:(977-1) 597-0995">(977-1) 597-0995 </a>| <img src="assets/icon.png" alt=""><a href="tel:(977-1) 597-0995">(977-1) 597-0995</a>
+                </span></span></div>
+        <ul class="navbar ml-auto">
+          <li class="nav-item">
+            <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-envelope"></i>
+          </li>
+        </ul>
+      </nav>
+
     </div>
     <!-- Header Area Start -->
     <header class="header-area">
@@ -49,41 +50,41 @@
         <!-- Main Header Start -->
         <div class="main-header-area">
             <div class="classy-nav-container breakpoint-off">
-                <div class="">
+                <div class="nav-color">
                     <!-- Classy Menu -->
                     <nav class="shadow classy-navbar justify-content-between" id="nav">
 
-                        <a class="nav-brand p-5" href="index.html"><b><i class="fas fa-umbrella-beach"></i> HMS</b></a>
+                        <a class="nav-brand p-5" href="index.html"><img src="img/logo2.png"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            <span class="navbarToggler mr-5">
+                                <span style="background-color:white"></span>
+                                <span style="background-color:white"></span>
+                                <span style="background-color:white"></span>
+                            </span>
                         </div>
 
                         <!-- Menu -->
-                        <div class="classy-menu">
+                        <div class="classy-menu mr-5">
                             <!-- Menu Close Button -->
                             <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                <div class="cross-wrap" style="background-color:white;">
+                                    <span class="top" style="background-color:#b90000;"></span>
+                                    <span class="bottom" style="background-color:#b90000;"></span>
+                                </div>
                             </div>
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li class="active"><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
-                                    <li><a href="./about.html"><i class="fas fa-hotel"></i> About Us</a></li>
-                                    <li><a href="./room.html"><i class="fas fa-bed"></i> Rooms</a>
-                                        <ul class="dropdown">
-                                            <li><a href="./single-room.html"><i class="fas fa-bed"></i> Single Room</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="./contact.html"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                                    <li class="active"><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./about.html">Airliance News</a></li>
+                                    <li><a href="./about.html"> Blog</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
+                                <button class="btn btn-outline-secondary my-2 my-sm-0 ml-2" type="submit">Request Quote</button>
 
-                                <div class="book-now-btn ml-3 ml-lg-5">
-                                    <a href="login-register.html">Login <i class="fas fa-sign-in-alt"></i></a>
-                                </div>
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -98,7 +99,7 @@
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/16.jpg);"
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/19.jpg);"
                 data-img-url="img/bg-img/16.jpg">
                 <!-- Welcome Content -->
                 <div class="welcome-content h-100">
@@ -107,11 +108,7 @@
                             <!-- Welcome Text -->
                             <div class="col-12">
                                 <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInLeft" data-delay="200ms">Hotel Management System</h6>
-                                    <h2 data-animation="fadeInLeft" data-delay="500ms">Welcome To <b>Hotel Management
-                                            System</b></h2>
-                                    <a href="./about.html" class="btn design-btn btn-2" data-animation="fadeInLeft"
-                                        data-delay="800ms">Explore Now</a>
+                                    <h2 data-animation="fadeInLeft" data-delay="500ms"><b>Book Your Ticket Here</b></h2>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +117,7 @@
             </div>
 
             <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/17.jpg);"
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/20.jpg);"
                 data-img-url="img/bg-img/17.jpg">
                 <!-- Welcome Content -->
                 <div class="welcome-content h-100">
@@ -129,11 +126,7 @@
                             <!-- Welcome Text -->
                             <div class="col-12">
                                 <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInUp" data-delay="200ms">Hotel Management System</h6>
-                                    <h2 data-animation="fadeInUp" data-delay="500ms">Welcome To <b>Hotel Management
-                                            System</b></h2>
-                                    <a href="./about.html" class="btn design-btn btn-2" data-animation="fadeInUp"
-                                        data-delay="800ms">Explore Now</a>
+                                    <h2 data-animation="fadeInLeft" data-delay="500ms"><b>Book Your Ticket Here</b></h2>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +135,7 @@
             </div>
 
             <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/18.jpg);"
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/19.jpg);"
                 data-img-url="img/bg-img/18.jpg">
                 <!-- Welcome Content -->
                 <div class="welcome-content h-100">
@@ -151,11 +144,7 @@
                             <!-- Welcome Text -->
                             <div class="col-12">
                                 <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInDown" data-delay="200ms">Hotel Management System</h6>
-                                    <h2 data-animation="fadeInDown" data-delay="500ms">Welcome To <b>Hotel Management
-                                            System</b></h2>
-                                    <a href="./about.html" class="btn design-btn btn-2" data-animation="fadeInDown"
-                                        data-delay="800ms">Explore Now</a>
+                                    <h2 data-animation="fadeInLeft" data-delay="500ms"><b>Book Your Ticket Here</b></h2>
                                 </div>
                             </div>
                         </div>
@@ -174,57 +163,106 @@
                 <!-- <div class="container-fluid"> -->
                 <div class="hotel-search-form">
                     <form action="#" method="post">
+                        <div class="mb-30">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="trip" id="one-way" value="one-way" checked>
+                                <label class="form-check-label" for="one-way">One way</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="trip" id="round-trip" value="round-trip">
+                                <label class="form-check-label" for="round-trip">Round trip</label>
+                              </div>
+                        </div>
+                        <div>
+                            
+                                <div class="row justify-content-between align-items-end">
+                                  <div class="col-6 col-md-2 col-lg-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Enter Name">
+                                  </div>
+                                  <div class="col-6 col-md-2 col-lg-3">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Enter PhoneNumber">
+                                  </div>
+                                  <div class="col-6 col-md-2 col-lg-3">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Enter Email">
+                                  </div>
+                                </div>
+                              
+                        </div>
+                        
                         <div class="row justify-content-between align-items-end">
-                            <div class="col-6 col-md-2 col-lg-3">
-                                <label for="checkIn">Check In</label>
+                            <div class="col-6 col-md-2 col-lg-2">
+                                <input type="text" class="form-control" id="checkIn" placeholder="Departure City">
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-2">
+                                <input type="text" class="form-control" id="checkIn" placeholder="Arrival City">
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-2">
+                                <label for="Departure Date">Departure Date</label>
                                 <input type="date" class="form-control" id="checkIn" name="checkin-date">
-                            </div>
-                            <div class="col-6 col-md-2 col-lg-3">
-                                <label for="checkOut">Check Out</label>
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-2">
+                                <label for="Return Date">Return Date</label>
                                 <input type="date" class="form-control" id="checkOut" name="checkout-date">
-                            </div>
-                            <div class="col-4 col-md-1">
-                                <label for="room">Room</label>
-                                <select name="room" id="room" class="form-control">
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
-                                </select>
-                            </div>
-                            <div class="col-4 col-md-1">
-                                <label for="adults">Adult</label>
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-2">
                                 <select name="adults" id="adults" class="form-control">
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
+                                    <option value="01">No. of Adults</option>
+                                    <option value="02">01</option>
+                                    <option value="03">02</option>
+                                    <option value="04">03</option>
+                                    <option value="05">04</option>
+                                    <option value="06">05</option>
                                     <option value="06">06</option>
                                 </select>
-                            </div>
-                            <div class="col-4 col-md-2 col-lg-1">
-                                <label for="children">Children</label>
-                                <select name="children" id="children" class="form-control">
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-2">
+                                <select name="children" id="children" class="form-control" placeholder="Adult">
+                                    <option value="01">No. of Child</option>
+                                    <option value="02">00</option>
+                                    <option value="03">01</option>
+                                    <option value="04">02</option>
+                                    <option value="05">03</option>
+                                    <option value="06">04</option>
                                 </select>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <button type="submit" class="form-control btn design-btn w-100">Check
-                                    Availability</button>
+                              </div>
+                            <div class="d-grid gap-2 col-4 mx-auto">
+                                <button type="submit" class="form-control btn design-btn w-100">Request Quote</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+
+        <!-- About Us Section -->
+        <section class="about-us-area section-padding-100-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="about-thumbnail pr-lg-5 mb-100 wow fadeInUp" data-wow-delay="100ms">
+                            <img src="img/bg-img/17.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading wow fadeInUp" data-wow-delay="300ms">
+                            <h2>About Us</h2>
+                        </div>
+                        <div class="about-content mb-100 wow fadeInUp" data-wow-delay="500ms">
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id
+                                est laborum. Sed ut perspiciatis unde omnis iste.</p>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id
+                                est laborum. Sed ut perspiciatis unde omnis iste. Lorem Ipsum available.</p>
+
+                                <div>
+                                    <a href="#" class="btn design-btn">Read More</a>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer Area Start -->
         <footer class="footer-area section-padding-80-0 mt-5">
@@ -323,6 +361,8 @@
         <!-- Active -->
         <script src="js/default-assets/active.js"></script>
 
+        <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+    </section>    
 </body>
 
 </html>
