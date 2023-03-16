@@ -186,7 +186,8 @@ h6 {
   font-family: "Poppins", sans-serif;
   color: #2a303b;
   line-height: 1.3;
-  font-weight: 500; }
+  font-weight: 500; 
+}
 
 a,
 a:active,
@@ -875,7 +876,7 @@ input:focus {
       @media only screen and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 24px;
-          margin-bottom: 200px; } }
+          margin-bottom: 50px; } }
 
 /* :: 9.0 Footer Area CSS */
 .footer-area {
@@ -1268,17 +1269,105 @@ html .ui-button.ui-state-disabled:active {
         padding-right: 10px; }
 
 /* :: 15.0 About CSS */
-.about-content {
+.about-us-section{
+  margin-top: -3%;
+}
+.section-about {
   position: relative;
+  margin-top: -80px;
+  margin-left: -5%;
+  width: 100%;
+  height: 403px;
+  transform: scale(0.9);
   z-index: 1; }
 
+  .about-content p{
+    width: 120%;
+  }
+
+  .about-content a{
+    margin-top: 22px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
+    .about-content p{
+      width: 120%;
+      margin-top: -10px;
+      font-size: 14px;
+      
+    }
+    .section-heading h2{
+      margin-top: 32px;
+    }
+    .about-content a{
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .about-us-section{
+      margin-top: -8%;
+    }
+  }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+    .about-content p{
+      width: 120%;
+      margin-top: -10px;
+      font-size: 12px;
+      
+      
+    }
+    .section-heading h2{
+      margin-top: 60px;
+      transform: scale(0.8);
+      margin-left: -35px;
+      margin-bottom: -30px;
+    }
+    .about-content a{
+      margin-top: -10px;
+      margin-left: -20px;
+      font-size: 16px;
+      transform: scale(0.8);
+    }
+    .about-us-section{
+      margin-top: -13%;
+    }
+  }
+  @media only screen and (min-width: 280px) and (max-width: 767px){
+    .about-content p{
+      width: 120%;
+      margin-top: -10px;
+      font-size: 12px;
+    }
+    .about-content{
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .section-heading h2{
+      text-align: center;
+      margin-top: 60px;
+      transform: scale(0.8);
+      margin-left: -35px;
+      margin-bottom: -30px;
+    }
+    .about-content a{
+      transform: scale(0.8);
+      margin-top: -2%;
+    }
+    .section-about{
+      margin-top: -50%;
+    }
+    .about-us-section{
+      margin-top: 75%;
+    }
+  } 
 
 .about-thumbnail {
   position: relative;
   z-index: 1; }
   .about-thumbnail img {
-    border-radius: 6px;
-    width: 100%; }
+    width: 100%;
+    object-fit: contain;
+    height: 403px; }
 
 .single-service-area {
   position: relative;
@@ -1334,6 +1423,7 @@ html .ui-button.ui-state-disabled:active {
       padding-right: 0%; } }
   @media only screen and (max-width: 767px) {
     .hotel-search-form-area {
+      margin-top: -125px;
       padding-left: 0%;
       padding-right: 0%; } }
   .hotel-search-form-area .hotel-search-form {

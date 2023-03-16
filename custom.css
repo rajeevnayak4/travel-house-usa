@@ -209,7 +209,7 @@
 }
 
 .copyright__text {
-    background-color: #000000;
+    background-color: #404040;
     text-align: center;
     padding: 5px;
     color: #ffffff;
@@ -231,9 +231,10 @@
 }
 
 .footer-badge {
-    background-color: #DE2228;
+    background-color: #9B0000;
 }
 
 .footer-badge:hover {
-    background-color: #214192;
+    background-color: #9B0000;
+    color: white;
 }
