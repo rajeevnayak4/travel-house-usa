@@ -135,10 +135,7 @@ body {
         background-color: #9b0000;
     }
     
-    .breakpoint-on .classynav > ul > li > a {
-        background-color: #9b0000;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    }
+
     
     .classy-nav-container .classy-navbar {
         height: 75px !important;
@@ -157,7 +154,10 @@ body {
 
       @media only screen and (min-width: 280px) and (max-width: 767px){
         
-      
+        .breakpoint-on .classynav > ul > li > a {
+          background-color: #9b0000;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
     }
 
 
@@ -1271,6 +1271,7 @@ html .ui-button.ui-state-disabled:active {
 .about-content {
   position: relative;
   z-index: 1; }
+
 
 .about-thumbnail {
   position: relative;
