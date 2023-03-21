@@ -1,4 +1,3 @@
-
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -232,6 +231,7 @@
 
 .footer-badge {
     background-color: #9B0000;
+    color: white;
 }
 
 .footer-badge:hover {

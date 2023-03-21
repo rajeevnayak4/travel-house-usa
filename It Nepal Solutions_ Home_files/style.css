@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+# Start General Styling
+--------------------------------------------------------------*/
+
+:root {
+    /* --primary-color: #4164cc;
+  --secondary-color: #3444ce; */
+    --primary-color: #214192;
+    --secondary-color: #de2228;
+    /* Red - #de2228
+Blue - #214192
+*/
+    --black: #000;
+    --white: #fff;
+    --gray: #444444;
+    --lightgray: #d3d3d3;
+    --facebook-color: #4d6ba7;
+    --google-color: #db4437;
+}
+
+
+/*--------------------------------------------------------------
+# Start Tools and Technologies
+--------------------------------------------------------------*/
+
+.tools .swiper-pagination {
+    margin-top: 50px;
+    position: relative;
+}
+
+.tools .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--white);
+    opacity: 1;
+    border: 1px solid var(--secondary-color);
+}
+
+.tools .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--secondary-color);
+}
+
+.tools .swiper-slide img {
+    /* opacity: 0.5; */
+    transition: 0.3s;
+    /* filter: grayscale(100); */
+}
+
+.tools .swiper-slide img:hover {
+    opacity: 1;
+    filter: none;
+}

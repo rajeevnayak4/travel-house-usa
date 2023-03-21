@@ -1,0 +1,282 @@
+:root {
+    --primary-color: #ea1818;
+    --secondary-color: #e7213f;
+    --tertiary-color: #333333;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #757575;
+}
+
+.blog .card,
+.contact .card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: 1px 1px 1px var(--black); */
+}
+
+@media screen and (max-width: 995px) {
+    .navbar img {
+        height: 60px;
+        width: 100px;
+    }
+}
+
+.our-deliver h2,
+#product h2,
+.blog h2,
+.blog-detail h2,
+.testimonial h2,
+.contact h2,
+.faq .accordion-text h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.blog-card img {
+    min-height: 35vh;
+    max-height: 35vh;
+    object-fit: cover;
+}
+
+.blog .bg-image img {
+    min-height: 40vh;
+    max-height: 40vh;
+    object-fit: cover;
+}
+
+.blog .posts .blog-card h5 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#posts .row h5 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.carousel-caption {
+    top: 35%;
+}
+
+.image-carousel .carousel-inner .carousel-item img {
+    /* background-position: center; */
+    width: 100%;
+    max-height: 80vh;
+    min-height: 55vh;
+    /*opacity: 0.8;*/
+}
+
+
+/* Begin Index Page */
+
+.product .content {
+    padding: 12px;
+}
+
+.product .category {
+    /* font-size: 12px; */
+    margin: 0 0 5px;
+    display: block;
+}
+
+.product .category a {
+    text-decoration: none;
+    color: var(--gray);
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.product .category a:hover {
+    color: var(--black);
+}
+
+.product .card-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.product .card-text a {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.5s;
+}
+
+.product .card-text a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* .product .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.product .title a {
+  color: var(--gray);
+  transition: 0.5s;
+}
+
+.product .title a:hover {
+  color: var(--primary-color);
+} */
+
+
+/* .product .price {
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 700;
+} */
+
+
+/* .product .price span {
+  color: var(--gray);
+  margin: 0 5px 0 0;
+  font-weight: 300;
+  font-size: 14px;
+} */
+
+.product .btn,
+.blog .btn,
+
+/* .contact .btn, */
+
+.send .btn {
+    background-color: var(--tertiary-color);
+}
+
+.product .btn:hover,
+.blog .btn:hover,
+
+/* .contact .btn:hover, */
+
+.send .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 990px) {
+    .product {
+        margin: 0 0 30px;
+    }
+}
+
+
+/* Start Carousel prev and next button in product slider */
+
+.owl-controls .owl-buttons {
+    position: relative;
+}
+
+.owl-controls .owl-prev {
+    position: absolute;
+    left: -5px;
+    bottom: 225px;
+    padding: 8px 17px;
+    background: var(--black);
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.owl-controls .owl-next {
+    position: absolute;
+    right: -5px;
+    bottom: 225px;
+    padding: 8px 17px;
+    background: var(--black);
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.owl-controls .owl-prev:after,
+.owl-controls .owl-next:after {
+    content: '\2039';
+    color: var(--white);
+    font-size: 16px;
+}
+
+.owl-controls .owl-next:after {
+    content: '\203A';
+}
+
+.owl-controls .owl-prev:hover,
+.owl-controls .owl-next:hover {
+    background: var(--secondary-color);
+}
+
+
+/* End Carousel prev and next button in product slider */
+
+
+/* Start Pagination */
+
+.pagination {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.pagination a {
+    color: var(--black);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+
+/* End Pagination */
+
+
+/* End Index Product Section */
+
+
+/* Start Blog Detail Page */
+
+
+/* Start Blog Detail Section */
+
+.blog-detail .feature-img {
+    max-height: 70vh;
+    min-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-detail .row .btn {
+    background-color: var(--facebook-color);
+}
+
+.blog-detail .row .btn1 {
+    background-color: var(--secondary-color);
+}
+
+
+/*comment section style*/
+
+.blog-detail .row .btn-add-comment {
+    color: var(--white);
+    background-color: var(--tertiary-color);
+}
+
+.blog-detail .row .btn-add-comment:hover {
+    background-color: var(--secondary-color);
+}
+
+.blog-detail .row .btn-send {
+    color: var(--white);
+    background-color: var(--tertiary-color);
+}
+
+.blog-detail .row .btn-send:hover {
+    background-color: var(--secondary-color);
+}
